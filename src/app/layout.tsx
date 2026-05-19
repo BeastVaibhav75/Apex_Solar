@@ -9,13 +9,45 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Apex Solar | Coming Soon",
+  title: "Apex Solar Infra Pvt Ltd | Solar Panel Installation & Energy Solutions",
   description:
-    "Professional solar panel installation and renewable energy services. Our new website is under construction — we will be back soon.",
+    "Apex Solar Infra Pvt Ltd provides professional solar panel installation, maintenance, and renewable energy solutions. Powering a brighter, sustainable future.",
+  keywords: [
+    "Solar Panel Installation",
+    "Renewable Energy Solutions",
+    "Apex Solar Infra",
+    "Solar Maintenance",
+    "Sustainable Energy",
+    "Solar Power India",
+  ],
+  authors: [{ name: "Apex Solar Infra Pvt Ltd" }],
+  openGraph: {
+    title: "Apex Solar Infra Pvt Ltd | Solar Energy Solutions",
+    description: "Professional solar panel installation and renewable energy services.",
+    url: "https://apexsolar.in", // Replace with your actual domain
+    siteName: "Apex Solar",
+    images: [
+      {
+        url: "/solar-installation-hero.png",
+        width: 1200,
+        height: 630,
+        alt: "Apex Solar Installation",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Apex Solar Infra Pvt Ltd | Solar Energy Solutions",
+    description: "Professional solar panel installation and renewable energy services.",
+    images: ["/solar-installation-hero.png"],
+  },
   icons: {
     icon: "/Logo_Tp.png",
     apple: "/Logo_Tp.png",
   },
+  metadataBase: new URL("https://apexsolar.in"), // Replace with your actual domain
 };
 
 export default function RootLayout({
@@ -25,6 +57,44 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${outfit.variable} h-full antialiased`} suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Apex Solar Infra Pvt Ltd",
+              "image": "https://apexsolar.in/Logo_Tp.png",
+              "@id": "https://apexsolar.in",
+              "url": "https://apexsolar.in",
+              "telephone": "+917988449943",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "",
+                "addressLocality": "",
+                "addressRegion": "",
+                "postalCode": "",
+                "addressCountry": "IN"
+              },
+              "description": "Professional solar panel installation, maintenance, and renewable energy solutions.",
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday"
+                ],
+                "opens": "09:00",
+                "closes": "18:00"
+              }
+            })
+          }}
+        />
+      </head>
       <body className="min-h-full">{children}</body>
     </html>
   );
