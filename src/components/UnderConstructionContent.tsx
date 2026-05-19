@@ -50,7 +50,7 @@ export default function UnderConstructionContent() {
         </motion.div>
       </header>
 
-      <main className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col items-center gap-4 px-6 pb-12 lg:flex-row lg:items-center lg:gap-8 lg:px-10 lg:pb-0">
+      <main className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col items-center gap-4 px-6 pb-20 lg:flex-row lg:items-center lg:gap-8 lg:px-10 lg:pb-0">
         <div className="flex min-h-0 min-w-0 flex-1 flex-col items-center justify-center text-center lg:items-start lg:text-left">
           <motion.span
             variants={item}
@@ -102,16 +102,32 @@ export default function UnderConstructionContent() {
               href="https://wa.me/917988449943"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-solar-blue px-8 py-4 text-base font-semibold text-white shadow-lg shadow-solar-blue/25 transition hover:bg-solar-blue/90 sm:text-lg"
+              className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-solar-blue px-8 py-4 text-base font-semibold text-white shadow-lg shadow-solar-blue/25 transition-all duration-300 hover:scale-105 active:scale-95 sm:text-lg"
             >
-              Contact us
+              <span className="absolute inset-0 bg-gradient-to-r from-solar-blue-light to-solar-yellow opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+              <span className="relative flex items-center gap-2">
+                Contact us
+                <svg
+                  className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </span>
             </a>
           </motion.div>
         </div>
 
         <motion.div
           variants={item}
-          className="flex min-h-0 w-full min-w-0 flex-1 items-center justify-center lg:max-w-4xl xl:max-w-5xl [&_img]:max-h-[40vh] [&_img]:w-auto [&_img]:object-contain lg:[&_img]:max-h-[48vh]"
+          className="flex min-h-0 w-full min-w-0 flex-1 items-center justify-center lg:max-w-4xl xl:max-w-5xl"
         >
           <AnimatedSolarHero />
         </motion.div>
@@ -119,7 +135,7 @@ export default function UnderConstructionContent() {
 
       <motion.footer
         variants={item}
-        className="relative z-10 shrink-0 border-t border-solar-blue/10 bg-white/40 px-6 py-2 text-center text-base text-solar-blue/60 backdrop-blur-sm sm:text-lg"
+        className="relative z-10 shrink-0 border-t border-solar-blue/10 px-6 py-4 text-center text-base text-solar-blue/60 sm:text-lg"
       >
         © {new Date().getFullYear()} Apex Solar. All rights reserved.
       </motion.footer>

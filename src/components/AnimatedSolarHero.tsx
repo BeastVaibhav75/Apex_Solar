@@ -14,20 +14,20 @@ export default function AnimatedSolarHero() {
       <div className="absolute -inset-6 rounded-3xl bg-gradient-to-br from-solar-blue-light/25 via-transparent to-solar-yellow/20 blur-3xl" />
 
       <motion.div
-        className="relative overflow-hidden rounded-2xl border border-white/70 bg-white/30 shadow-2xl shadow-solar-blue/15 backdrop-blur-sm sm:rounded-3xl"
+        className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/70 bg-white/30 shadow-2xl shadow-solar-blue/15 backdrop-blur-sm sm:rounded-3xl lg:aspect-auto lg:h-[48vh]"
         animate={{ y: [0, -10, 0] }}
         transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
       >
         <motion.div
+          className="h-full w-full"
           animate={{ scale: [1, 1.02, 1] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         >
           <Image
             src="/solar-installation-hero.png"
             alt="Solar installation team mounting panels on a rooftop"
-            width={1200}
-            height={900}
-            className="relative z-0 h-auto w-full object-cover"
+            fill
+            className="relative z-0 object-cover"
             priority
           />
         </motion.div>
