@@ -79,7 +79,7 @@ export default function UnderConstructionContent() {
             className="mt-6 max-w-xl text-lg leading-relaxed text-solar-blue/80 sm:text-xl lg:text-2xl"
           >
             Apex Solar provides professional solar panel installation, maintenance,
-            and rooftop solar solutions across Haryana. Our new website is on the way — we&apos;ll be back online soon.
+            and rooftop solar solutions across multiple regions. Our new website is on the way — we&apos;ll be back online soon.
           </motion.p>
 
           <motion.div variants={item} className="mt-10 w-full max-w-lg">

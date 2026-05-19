@@ -9,22 +9,24 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Apex Solar Infra Pvt Ltd | Best Solar Panel Installation in Haryana",
+  title: "Apex Solar Infra Pvt Ltd | Premier Solar Panel Installation & Energy Solutions",
   description:
-    "Top-rated solar panel installation in Haryana. Apex Solar Infra Pvt Ltd provides professional solar energy solutions, maintenance, and rooftop solar for homes & businesses across Haryana.",
+    "Apex Solar Infra Pvt Ltd provides professional solar panel installation, maintenance, and rooftop solar solutions for homes & businesses. Powering India with clean, sustainable energy.",
   keywords: [
-    "Solar Panel Installation in Haryana",
-    "Best Solar Company in Haryana",
-    "Solar Rooftop Installation Haryana",
-    "Solar Panel Price in Haryana",
-    "Apex Solar Infra Haryana",
-    "Renewable Energy Solutions Haryana",
-    "Solar Subsidy Haryana",
+    "Solar Panel Installation",
+    "Best Solar Company India",
+    "Solar Rooftop Installation",
+    "Solar Panel Price",
+    "Apex Solar Infra",
+    "Renewable Energy Solutions",
+    "Solar Subsidy India",
+    "Solar Installer Haryana",
+    "Solar Panel Installation Haryana",
   ],
   authors: [{ name: "Apex Solar Infra Pvt Ltd" }],
   openGraph: {
-    title: "Apex Solar Infra Pvt Ltd | Leading Solar Installer in Haryana",
-    description: "Expert solar panel installation and maintenance services in Haryana. Powering homes and businesses with clean energy.",
+    title: "Apex Solar Infra Pvt Ltd | Leading Solar Installer",
+    description: "Expert solar panel installation and maintenance services. Powering homes and businesses with clean energy across India.",
     url: "https://apexsolarinfra.com",
     siteName: "Apex Solar",
     images: [
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
         url: "/solar-installation-hero.png",
         width: 1200,
         height: 630,
-        alt: "Apex Solar Installation Haryana",
+        alt: "Apex Solar Installation",
       },
     ],
     locale: "en_IN",
@@ -40,8 +42,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Apex Solar Infra Pvt Ltd | Solar Energy Solutions Haryana",
-    description: "Professional solar panel installation services across Haryana.",
+    title: "Apex Solar Infra Pvt Ltd | Solar Energy Solutions",
+    description: "Professional solar panel installation services across India.",
     images: ["/solar-installation-hero.png"],
   },
   icons: {
@@ -59,10 +61,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${outfit.variable} h-full antialiased`} suppressHydrationWarning>
       <head>
-        <meta name="geo.region" content="IN-HR" />
-        <meta name="geo.placename" content="Haryana" />
-        <meta name="geo.position" content="29.0588;76.0856" />
-        <meta name="ICBM" content="29.0588, 76.0856" />
+        <meta name="geo.region" content="IN" />
+        <meta name="geo.placename" content="India" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -76,22 +76,23 @@ export default function RootLayout({
               "telephone": "+917988449943",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Haryana, India",
-                "addressLocality": "Haryana",
-                "addressRegion": "HR",
+                "streetAddress": "India",
+                "addressLocality": "Multiple Locations",
+                "addressRegion": "India",
                 "postalCode": "",
                 "addressCountry": "IN"
               },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 29.0588,
-                "longitude": 76.0856
-              },
-              "areaServed": {
-                "@type": "State",
-                "name": "Haryana"
-              },
-              "description": "Expert solar panel installation, rooftop solar solutions, and maintenance services in Haryana, India.",
+              "areaServed": [
+                {
+                  "@type": "State",
+                  "name": "Haryana"
+                },
+                {
+                  "@type": "Country",
+                  "name": "India"
+                }
+              ],
+              "description": "Expert solar panel installation, rooftop solar solutions, and maintenance services for homes and businesses across India.",
               "openingHoursSpecification": {
                 "@type": "OpeningHoursSpecification",
                 "dayOfWeek": [
