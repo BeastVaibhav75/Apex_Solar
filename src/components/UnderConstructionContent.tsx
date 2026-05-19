@@ -20,7 +20,7 @@ const item = {
 export default function UnderConstructionContent() {
   return (
     <motion.div
-      className="relative flex h-[100dvh] max-h-[100dvh] flex-col overflow-hidden"
+      className="relative flex min-h-[100dvh] flex-col"
       variants={container}
       initial="hidden"
       animate="show"
@@ -50,7 +50,7 @@ export default function UnderConstructionContent() {
         </motion.div>
       </header>
 
-      <main className="relative z-10 mx-auto flex min-h-0 w-full max-w-7xl flex-1 flex-col items-center gap-4 overflow-hidden px-6 lg:flex-row lg:items-center lg:gap-8 lg:px-10">
+      <main className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col items-center gap-4 px-6 pb-12 lg:flex-row lg:items-center lg:gap-8 lg:px-10 lg:pb-0">
         <div className="flex min-h-0 min-w-0 flex-1 flex-col items-center justify-center text-center lg:items-start lg:text-left">
           <motion.span
             variants={item}
@@ -111,7 +111,7 @@ export default function UnderConstructionContent() {
 
         <motion.div
           variants={item}
-          className="flex min-h-0 w-full min-w-0 flex-1 items-center justify-center lg:max-w-4xl xl:max-w-5xl [&_img]:max-h-[34vh] [&_img]:w-auto [&_img]:object-contain lg:[&_img]:max-h-[48vh]"
+          className="flex min-h-0 w-full min-w-0 flex-1 items-center justify-center lg:max-w-4xl xl:max-w-5xl [&_img]:max-h-[40vh] [&_img]:w-auto [&_img]:object-contain lg:[&_img]:max-h-[48vh]"
         >
           <AnimatedSolarHero />
         </motion.div>

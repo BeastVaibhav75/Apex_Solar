@@ -20,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${outfit.variable} h-full antialiased`}>
-      <body className="h-full overflow-hidden">{children}</body>
+    <html lang="en" className={`${outfit.variable} h-full antialiased`} suppressHydrationWarning>
+      <body className="min-h-full">{children}</body>
     </html>
   );
 }
