@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Apex Solar Infra Pvt Ltd | Solar Energy Solutions",
     description: "Professional solar panel installation and renewable energy services.",
-    url: "https://apexsolar.in", // Replace with your actual domain
+    url: "https://apexsolarinfra.com",
     siteName: "Apex Solar",
     images: [
       {
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     icon: "/Logo_Tp.png",
     apple: "/Logo_Tp.png",
   },
-  metadataBase: new URL("https://apexsolar.in"), // Replace with your actual domain
+  metadataBase: new URL("https://apexsolarinfra.com"),
 };
 
 export default function RootLayout({
@@ -65,9 +65,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Apex Solar Infra Pvt Ltd",
-              "image": "https://apexsolar.in/Logo_Tp.png",
-              "@id": "https://apexsolar.in",
-              "url": "https://apexsolar.in",
+              "image": "https://apexsolarinfra.com/Logo_Tp.png",
+              "@id": "https://apexsolarinfra.com",
+              "url": "https://apexsolarinfra.com",
               "telephone": "+917988449943",
               "address": {
                 "@type": "PostalAddress",

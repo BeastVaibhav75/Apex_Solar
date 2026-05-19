@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://apexsolar.in',
+      url: 'https://apexsolarinfra.com',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
