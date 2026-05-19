@@ -137,7 +137,7 @@ export default function UnderConstructionContent() {
         variants={item}
         className="relative z-10 shrink-0 border-t border-solar-blue/10 px-6 py-4 text-center text-base text-solar-blue/60 sm:text-lg"
       >
-        © {new Date().getFullYear()} Apex Solar. All rights reserved.
+        © {new Date().getFullYear()} Apex Solar Infra Pvt Ltd. All rights reserved.
       </motion.footer>
     </motion.div>
   );

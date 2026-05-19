@@ -12,6 +12,10 @@ export const metadata: Metadata = {
   title: "Apex Solar | Coming Soon",
   description:
     "Professional solar panel installation and renewable energy services. Our new website is under construction — we will be back soon.",
+  icons: {
+    icon: "/Logo_Tp.png",
+    apple: "/Logo_Tp.png",
+  },
 };
 
 export default function RootLayout({
